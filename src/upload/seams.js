@@ -105,6 +105,8 @@ const doEnergyCalculation = cwise({
         (xB - xBN) * (xB - xBN) +
         (xB - xBE) * (xB - xBN)
     );
+    // Prevent the compiler from removing assignment to y
+    this.y = y;
   },
 });
 
